@@ -3,7 +3,7 @@ FROM python:3.8-alpine
 LABEL "com.github.actions.name"="S3 Sync"
 LABEL "com.github.actions.description"="Sync a directory to an AWS S3 repository"
 
-ENV AWSCLI_VERSION='2.11.13'
+ENV AWSCLI_VERSION='1.27.114'
 
 RUN pip install --quiet --no-cache-dir awscli==${AWSCLI_VERSION}
 
