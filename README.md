@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: saurav66/s3-sync-plugins@master
+    - uses: saurav66/s3-sync-plugins@main
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
